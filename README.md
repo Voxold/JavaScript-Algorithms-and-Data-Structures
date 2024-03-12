@@ -1,5 +1,7 @@
-<h1>JavaScript Algorithms and Data Structures</h1>
-<h1>FREECODECAMP Certification</h1>
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/39/FreeCodeCamp_logo.png" >
+
+<h3>JavaScript Algorithms and Data Structures</h3>
+<h4 color="yellow">FREECODECAMP Certification</h4>
 
 <table>
     <tr>
