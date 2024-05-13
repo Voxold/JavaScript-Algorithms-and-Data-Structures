@@ -1,8 +1,25 @@
-let character = 'Hello';
-let count = 8;
-let rows = ["Naomi", "Quincy", "CamperChan"];
-let pushed = rows.push("freeCodeCamp");
-console.log(pushed);
-let popped = rows.pop();
-console.log(popped);
-console.log(rows);
+const character = "#";
+const count = 8;
+const rows = [];
+
+function padRow(name) {
+  
+  return character + name;
+  const test = "Testing";
+}
+
+const call = padRow("CamperChan");
+console.log(call);
+
+
+for (let i = 0; i < count; i = i + 1) {
+  rows.push(character.repeat(i + 1))
+}
+
+let result = ""
+
+for (const row of rows) {
+  result = result + "\n" + row;
+}
+
+console.log(result);
