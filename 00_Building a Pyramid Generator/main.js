@@ -2,19 +2,16 @@ const character = "#";
 const count = 8;
 const rows = [];
 
-function padRow(name) {
-  
-  return character + name;
-  const test = "Testing";
+function padRow(rowNumber, rowCount) {
+  return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
 }
 
-const call = padRow("CamperChan");
-console.log(call);
+// TODO: use a different type of loop
+/*for (let i = 1; i <= count; i++) {
+  rows.push(padRow(i, count));
+}*/
 
 
-for (let i = 0; i < count; i = i + 1) {
-  rows.push(character.repeat(i + 1))
-}
 
 let result = ""
 
