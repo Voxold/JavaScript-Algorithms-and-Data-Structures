@@ -52,13 +52,13 @@ function hasPassingGrade(score) {
 // Message the student with the results.
 function studentMsg(totalScores, studentScore) {
     if (getGrade(studentScore) !== "F"){
-    console.log(`Class average: ${getAverage(totalScores)} 
-    Your grade: ${getGrade(studentScore)} 
-    You passed the course.`)
+        return `Class average: ${getAverage(totalScores)} 
+        Your grade: ${getGrade(studentScore)} 
+        You failed the course.`
     }else{ 
-    console.log(`Class average: ${getAverage(totalScores)} 
-    Your grade: ${getGrade(studentScore)} 
-    You failed the course.`)
+        return `Class average: ${getAverage(totalScores)} 
+        Your grade: ${getGrade(studentScore)} 
+        You passed the course.`
     }
 }
 
