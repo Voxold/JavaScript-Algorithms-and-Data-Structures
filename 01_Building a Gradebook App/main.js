@@ -45,21 +45,27 @@ function hasPassingGrade(score) {
     }else{return false}
   }
   
-  
   console.log(hasPassingGrade(100));
   console.log(hasPassingGrade(53));
   console.log(hasPassingGrade(87));
 
 // Message the student with the results.
 function studentMsg(totalScores, studentScore) {
-
-    for (let i=0 ; i<studentScore.lenght ; i++){
-        if (getGrade(studentScore[i]) !== "F"){
-        console.log(`Class average: ${getAverage(score[i])} Your grade: ${getGrade(score[i])} You passed the course.`)
-        }else{ 
-        console.log(`Class average: ${getAverage(score[i])} Your grade: ${getGrade(score[i])} You failed the course.`)
-        }
+    if (getGrade(studentScore) !== "F"){
+    console.log(`Class average: ${getAverage(totalScores)} 
+    Your grade: ${getGrade(studentScore)} 
+    You passed the course.`)
+    }else{ 
+    console.log(`Class average: ${getAverage(totalScores)} 
+    Your grade: ${getGrade(studentScore)} 
+    You failed the course.`)
     }
-  }
+}
 
-  console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 37));
+console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 37));
+
+/* Valide : Class average: average-goes-here. 
+Your grade: grade-goes-here. You passed the course.*/
+
+/* Non-Valide : Class average: average-goes-here. 
+Your grade: grade-goes-here. You failed the course.*/
